@@ -1,0 +1,24 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Requisitos de la aplicación | Evidencias SDD</title><style>
+body{font:18px/1.55 system-ui,sans-serif;margin:0;background:#f6f7f8;color:#172126}main{max-width:1100px;margin:0 auto;padding:27px}header{border-bottom:1px solid #cbd1d5;padding-bottom:12px;margin-bottom:18px}h1{font-size:26px;margin:5px 0}.kicker{font-size:14px;letter-spacing:1.4px;color:#52616b}.source{font-size:15px;color:#52616b;margin-bottom:15px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:22px/1.4 Consolas,monospace;background:white;border:1px solid #d6dce0;padding:20px;margin:0}footer{font-size:14px;color:#52616b;margin-top:15px}
+</style><main><header><span class="kicker">REGISTRO DEL LABORATORIO · 29 OCT 2026</span><h1>Requisitos de la aplicación</h1></header><div class="source">specs/001-consultar-clima/spec.md</div><pre>### Functional Requirements
+
+- **FR-001**: Admitir ciudad de 1 a 100 caracteres tras recortar extremos; rechazar vacío
+  y solo espacios antes de consultar un servicio.
+- **FR-002**: Permitir envío mediante botón o Enter sin duplicarlo.
+- **FR-003**: Resolver el nombre y utilizar solo la primera ubicación devuelta.
+- **FR-004**: Informar ciudad no encontrada para cero ubicaciones o coordenadas ausentes.
+- **FR-005**: Validar coordenadas numéricas finitas en los rangos [-90,90] y [-180,180].
+- **FR-006**: Mostrar ciudad, temperatura en °C, humedad en % y precipitación en mm actuales.
+- **FR-007**: Conservar valores crudos y formatear solo al mostrar: un decimal para
+  temperatura/precipitación, entero para humedad.
+- **FR-008**: Usar como alternativa el nombre de búsqueda recortado cuando falte el nombre resuelto.
+- **FR-009**: Mostrar carga durante ambas etapas y ocultarla al terminar con éxito o error.
+- **FR-010**: Distinguir servicio afectado y problemas de red, espera, HTTP, datos inválidos
+  y datos meteorológicos incompletos, con mensajes en español.
+- **FR-011**: Limitar a 10 segundos cada consulta externa, incluyendo lectura de respuesta.
+- **FR-012**: Mantener el campo editable y permitir reintentos tras cualquier error.
+- **FR-013**: Limpiar datos y errores previos al comenzar otra búsqueda válida.
+- **FR-014**: Bloquear otro envío durante carga y habilitarlo después; ignorar envíos
+  programáticos mientras hay una búsqueda activa.
+- **FR-015**: Proporcionar etiqueta, foco visible y anuncios de estado accesibles.
+- **FR-016**: Presentar cadenas externas como texto, sin interpretarlas como marcado.</pre><footer>Vista de lectura de archivos y salidas reales guardados en el proyecto. No es una captura de terminal.</footer></main></html>

@@ -1,0 +1,39 @@
+PROMPT
+
+Utiliza las instrucciones y plantillas instaladas de GitHub Spec Kit para
+especificar una aplicación web en español que permita consultar las condiciones
+meteorológicas actuales de una ciudad.
+
+El usuario escribe un nombre de hasta 100 caracteres y busca con el botón o con
+Enter. La aplicación elimina espacios en los extremos, rechaza entradas vacías o
+de solo espacios sin realizar peticiones y muestra un indicador de carga.
+
+Obtiene las coordenadas con la API de geocodificación de Open-Meteo y utiliza el
+primer resultado. Después consulta las condiciones actuales en Open-Meteo para
+mostrar temperatura en grados Celsius, humedad relativa en porcentaje y
+precipitación en milímetros. Muestra el nombre de ciudad del servicio o, si falta,
+el texto de búsqueda recortado.
+
+Informa ciudad no encontrada, fallos de conexión, errores HTTP, timeout por
+petición y datos inválidos o incompletos. Permite corregir y reintentar después
+de un error. Limpia resultados anteriores al comenzar otra búsqueda válida.
+Evita consultas simultáneas y mantiene editable el campo durante la carga.
+
+Temperatura y precipitación se muestran con un decimal y humedad como entero.
+La interfaz debe ser adaptable a móvil y utilizable con teclado, con etiquetas
+y mensajes de estado comprensibles. El alcance es tiempo actual; no incluye
+cuentas, mapas, almacenamiento persistente ni predicción de varios días.
+
+Define historias de usuario, requisitos y criterios de aceptación comprobables.
+Revisa las ambigüedades antes de continuar al diseño técnico.
+
+CONTINUACIÓN DEL FLUJO
+
+Revisar primero la constitución y la especificación. Después elaborar el plan
+técnico, la investigación, el modelo de datos y el contrato de la API. Preparar
+las tareas, revisar su coherencia e implementar la aplicación siguiendo esos
+documentos. Verificar tipos, pruebas y compilación, y registrar los resultados.
+
+Para el diseño de este caso se eligieron HTML, CSS, TypeScript y Vite; para las
+pruebas se utilizaron Vitest y happy-dom. Esas decisiones técnicas se explican
+en plan.md y research.md.

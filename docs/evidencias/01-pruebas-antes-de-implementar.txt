@@ -1,0 +1,96 @@
+
+> clima-sdd-speckit@1.0.0 test:run
+> vitest run
+
+
+ RUN  v5.0.5 D:/tais lab3/clima-sdd-speckit
+
+ ❯ tests/http.test.ts (0 test)
+ ❯ tests/view.test.ts (0 test)
+ ❯ tests/controller.test.ts (0 test)
+ ❯ tests/services.test.ts (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/controller.test.ts [ tests/controller.test.ts ]
+Error: Failed to resolve import "../src/components/WeatherView" from "tests/controller.test.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: D:/tais lab3/clima-sdd-speckit/tests/controller.test.ts:2:28
+  1  |  import { beforeEach, describe, expect, it, vi } from "vitest";
+  2  |  import { WeatherView } from "../src/components/WeatherView";
+     |                               ^
+  3  |  import { WeatherController } from "../src/WeatherController";
+  4  |  import { WeatherError } from "../src/types";
+ ❯ TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/node.js:8803:39
+ ❯ TransformPluginContext.error node_modules/vite/dist/node/chunks/node.js:8800:14
+ ❯ resolveId node_modules/vite/dist/node/chunks/node.js:26594:18
+ ❯ node_modules/vite/dist/node/chunks/node.js:26693:23
+ ❯ TransformPluginContext.transform node_modules/vite/dist/node/chunks/node.js:26666:4
+ ❯ EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/node.js:8582:14
+ ❯ loadAndTransform node_modules/vite/dist/node/chunks/node.js:20155:26
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  tests/http.test.ts [ tests/http.test.ts ]
+Error: Failed to resolve import "../src/clients/http" from "tests/http.test.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: D:/tais lab3/clima-sdd-speckit/tests/http.test.ts:2:28
+  1  |  import { afterEach, describe, expect, it, vi } from "vitest";
+  2  |  import { requestJson } from "../src/clients/http";
+     |                               ^
+  3  |  afterEach(() => vi.useRealTimers());
+  4  |  describe("HTTP y timeout completo (FR-010, FR-011)", () => {
+ ❯ TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/node.js:8803:39
+ ❯ TransformPluginContext.error node_modules/vite/dist/node/chunks/node.js:8800:14
+ ❯ resolveId node_modules/vite/dist/node/chunks/node.js:26594:18
+ ❯ node_modules/vite/dist/node/chunks/node.js:26693:23
+ ❯ TransformPluginContext.transform node_modules/vite/dist/node/chunks/node.js:26666:4
+ ❯ EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/node.js:8582:14
+ ❯ loadAndTransform node_modules/vite/dist/node/chunks/node.js:20155:26
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  tests/services.test.ts [ tests/services.test.ts ]
+Error: Failed to resolve import "../src/services/weather" from "tests/services.test.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: D:/tais lab3/clima-sdd-speckit/tests/services.test.ts:2:38
+  1  |  import { describe, expect, it, vi } from "vitest";
+  2  |  import { createWeatherServices } from "../src/services/weather";
+     |                                         ^
+  3  |  const location = {
+  4  |  	name: "Lima",
+ ❯ TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/node.js:8803:39
+ ❯ TransformPluginContext.error node_modules/vite/dist/node/chunks/node.js:8800:14
+ ❯ resolveId node_modules/vite/dist/node/chunks/node.js:26594:18
+ ❯ node_modules/vite/dist/node/chunks/node.js:26693:23
+ ❯ TransformPluginContext.transform node_modules/vite/dist/node/chunks/node.js:26666:4
+ ❯ EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/node.js:8582:14
+ ❯ loadAndTransform node_modules/vite/dist/node/chunks/node.js:20155:26
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+ FAIL  tests/view.test.ts [ tests/view.test.ts ]
+Error: Failed to resolve import "../src/components/WeatherView" from "tests/view.test.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: D:/tais lab3/clima-sdd-speckit/tests/view.test.ts:2:28
+  1  |  import { beforeEach, describe, expect, it, vi } from "vitest";
+  2  |  import { WeatherView } from "../src/components/WeatherView";
+     |                               ^
+  3  |  import { formatTemperature, formatHumidity, formatPrecipitation } from "../src/utils/formatters";
+  4  |  let view;
+ ❯ TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/node.js:8803:39
+ ❯ TransformPluginContext.error node_modules/vite/dist/node/chunks/node.js:8800:14
+ ❯ resolveId node_modules/vite/dist/node/chunks/node.js:26594:18
+ ❯ node_modules/vite/dist/node/chunks/node.js:26693:23
+ ❯ TransformPluginContext.transform node_modules/vite/dist/node/chunks/node.js:26666:4
+ ❯ EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/node.js:8582:14
+ ❯ loadAndTransform node_modules/vite/dist/node/chunks/node.js:20155:26
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯
+
+
+ Test Files  4 failed (4)
+      Tests  no tests
+   Start at  09:49:44
+   Duration  929ms (environment 98%, worker 2%)
+

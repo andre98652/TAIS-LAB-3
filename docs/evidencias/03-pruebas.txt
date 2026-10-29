@@ -1,0 +1,13 @@
+
+> clima-sdd-speckit@1.0.0 test:run
+> vitest run
+
+
+ RUN  v5.0.5 D:/tais lab3/clima-sdd-speckit
+
+
+ Test Files  4 passed (4)
+      Tests  47 passed (47)
+   Start at  09:51:34
+   Duration  874ms (environment 86%, tests 5%, transform 5%, import 3%, worker 1%)
+

@@ -1,0 +1,11 @@
+{
+  "GitHub Spec Kit": "1.2.5",
+  "uv": "0.13.6",
+  "Python del entorno": "3.12.14",
+  "Node.js": "v24.16.0",
+  "npm": "11.13.0",
+  "happy-dom": "21.0.4",
+  "typescript": "7.0.2",
+  "vite": "8.3.5",
+  "vitest": "5.0.5"
+}
