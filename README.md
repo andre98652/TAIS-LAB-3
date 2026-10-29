@@ -6,9 +6,10 @@ de desarrollo guiado por especificaciones con GitHub Spec Kit 1.2.5.
 ## Ejecutar
 
 Requiere Node.js compatible con package.json (comprobado con 24.16.0) y npm.
-Desde esta carpeta:
+Desde la raíz del repositorio, entrar primero en `app`:
 
 ```powershell
+cd app
 npm.cmd ci
 npm.cmd run dev
 ```
@@ -24,6 +25,8 @@ instancias por defecto. Python y Spec Kit no se necesitan para usar la aplicaci�
 
 ## Verificar
 
+Ejecutar dentro de `app/`:
+
 ```powershell
 npm.cmd run typecheck
 npm.cmd run test:run
@@ -33,6 +36,18 @@ npm.cmd run build
 Se comprobaron 47 casos en cuatro archivos de pruebas, tipos y compilación de producción.
 Las pruebas de errores utilizan transporte simulado; la consulta real se comprobó además
 en navegador. No se midió cobertura porcentual ni se ejecutó una auditoría de seguridad.
+
+## Organización del repositorio
+
+- `app/`: aplicación completa, código, pruebas, dependencias declaradas y configuración.
+- `specs/`: requisitos, arquitectura, modelo de datos, contratos y tareas.
+- `.specify/` y `.agents/`: recursos de Spec Kit.
+- `docs/`: guía, bitácora, prompt y evidencias.
+- `informe/`: informe Word.
+
+El informe y las capturas registran la estructura original. Después se agrupó la
+aplicación en `app/`; para los comandos npm y las rutas de código del informe,
+utilizar ahora esa carpeta como directorio de trabajo.
 
 ## Flujo SDD
 

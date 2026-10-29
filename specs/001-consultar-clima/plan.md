@@ -49,27 +49,31 @@ specs/001-consultar-clima/
 ### Source Code (repository root)
 
 ```text
-src/
-  clients/http.ts
-  services/weather.ts
-  types/index.ts
-  utils/formatters.ts
-  components/WeatherView.ts
-  WeatherController.ts
-  main.ts
-  styles.css
-tests/
-  http.test.ts
-  services.test.ts
-  controller.test.ts
-  view.test.ts
+app/
+  src/
+    clients/http.ts
+    services/weather.ts
+    types/index.ts
+    utils/formatters.ts
+    components/WeatherView.ts
+    WeatherController.ts
+    main.ts
+    styles.css
+  tests/
+    http.test.ts
+    services.test.ts
+    controller.test.ts
+    view.test.ts
+  index.html
+  package.json
+  package-lock.json
+  tsconfig.json
+  vite.config.ts
+  README.md
 docs/
   bitacora-sdd.md
   evidencias/
-index.html
-package.json
-tsconfig.json
-vite.config.ts
+informe/
 README.md
 ```
 

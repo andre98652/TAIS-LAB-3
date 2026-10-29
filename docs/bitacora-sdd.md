@@ -1,5 +1,13 @@
 # Bitácora de realización del laboratorio
 
+## Reorganización posterior de la entrega
+
+Por solicitud del estudiante, la aplicación se agrupó en `app/`: código, pruebas,
+HTML, manifiestos npm, configuraciones y directorios locales de dependencias y build.
+Las especificaciones, el informe y las evidencias permanecen en la raíz del repositorio.
+Los comandos npm se ejecutan ahora desde `app/`. Las capturas y el informe conservan
+las rutas históricas de la realización original.
+
 Fecha: 29 de octubre de 2026. Carpeta: `D:/tais lab3/clima-sdd-speckit`.
 
 ## Contexto

@@ -1,3 +1,5 @@
+> Actualización de estructura: la aplicación se encuentra ahora en `app/`. Entrar con `cd app` antes de ejecutar los comandos npm de esta guía. Las rutas `src/`, `tests/` y los archivos de configuración de la aplicación se interpretan dentro de `app/`.
+
 # Guía para realizar el laboratorio de SDD con GitHub Spec Kit
 
 Fecha de preparación: 28 de octubre de 2026.

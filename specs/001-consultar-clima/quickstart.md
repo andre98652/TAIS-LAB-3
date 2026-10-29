@@ -6,9 +6,10 @@ Node.js LTS compatible con las versiones de package.json, npm y navegador.
 Para retomar el flujo: Python 3.11+ y Spec Kit 1.2.5 o una versión compatible.
 La aplicación funciona sin Python; .tools es solo el entorno local de preparación.
 
-## Ejecutar desde la raíz del proyecto
+## Ejecutar desde la raíz del repositorio
 
 ```powershell
+cd app
 npm.cmd ci
 npm.cmd run dev
 ```
@@ -17,6 +18,8 @@ Abrir la URL que muestre Vite. Buscar Lima y comprobar nombre, °C, %, mm y fuen
 Si el proveedor no responde, debe aparecer un error identificando el servicio.
 
 ## Comprobar de forma repetible
+
+Mantener la terminal dentro de `app/`.
 
 ```powershell
 npm.cmd run typecheck
